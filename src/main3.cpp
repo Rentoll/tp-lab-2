@@ -17,11 +17,6 @@ template<>char* change(char* val) {
 int main() {
 	const size_t n = 6;
 	char arr[n]{ '1', '2', '3', '4', '5', '6' };
-	std::cout << "original: ";
-	for (int i = 0; i < n; i++) {
-        std::cout << arr[i] << " ";
-	}
-	std::cout << std::endl << "Modified: ";
 	map<char, n>(arr, change);
 	for (int i = 0; i < n; i++) {
 		std::cout << arr[i] << " ";
